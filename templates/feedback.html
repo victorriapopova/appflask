@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Service Feedback</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Feedback on Auto Service</h3>
+    </div>
+    <div class="messages">
+    </div>
+    <div class="input-container">
+      <form id="feedback-form" action="/" method="post">
+        <input type="text" id="username" name="username" placeholder="Your name" required>
+        <input type="text" id="text" name="text" placeholder="Leave your feedback..." required>
+        <button type="submit" value="Submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
